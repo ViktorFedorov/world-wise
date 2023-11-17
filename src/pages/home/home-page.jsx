@@ -5,6 +5,7 @@ const HomePage = () => {
   return (
     <div>
       <h1>Home page</h1>
+      <Link to='app'>Go to the App</Link>
     </div>
   )
 }

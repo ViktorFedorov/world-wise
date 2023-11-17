@@ -5,6 +5,7 @@ import HomePage from '../../pages/home/home-page.jsx'
 import PricingPage from '../../pages/prices/pricing-page.jsx'
 import NotFoundPage from '../../pages/not-found/not-found-page.jsx'
 import Navigation from '../navigation/navigation.jsx'
+import AppLayout from '../../pages/app-layout/app-layout.jsx'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/' element={<HomePage />} />
           <Route path='product' element={<ProductPage />} />
           <Route path='pricing' element={<PricingPage />} />
+          <Route path='app' element={<AppLayout />} />
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
