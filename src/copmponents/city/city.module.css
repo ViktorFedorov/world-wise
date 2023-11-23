@@ -1,0 +1,35 @@
+.city {
+  padding: 10px 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: #383F42;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.name {
+  padding-left: 20px;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: #262F31;
+  border: none;
+  border-radius: 50%;
+  margin-left: 15px;
+  color: #E8EEF1;
+  padding-bottom: 1px;
+  font-size: 10px;
+}
+
