@@ -1,12 +1,19 @@
 import React from 'react'
 import styles from './city.module.css'
 
-const City = () => {
+const City = ({ city }) => {
+  const { cityName, emoji, date } = city
+
+  const data = date.toLocaleString()
+
   return (
     <li className={styles.city}>
-      <p className={styles.name}>Lisbon</p>
+      <div className={styles.left}>
+        <img src={emoji} alt='' className={styles.flag} />
+        <p className={styles.name}>{cityName}</p>
+      </div>
       <div className={styles.group}>
-        <p>(October 31, 2027)</p>
+        <p>({data})</p>
         <button className={styles.remove}>x</button>
       </div>
     </li>
