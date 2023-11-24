@@ -10,6 +10,17 @@ import CountryList from '../country-list/country-list.jsx'
 
 const BASE_URL = 'http://localhost:3000'
 
+const uniqCountries = (cities) => {
+  const countries = []
+
+  for (let i = 0; i < cities.length; i++) {
+    if (countries.some((country) => country === cities[i].country)) continue
+    countries.push(cities[i].country)
+  }
+
+  return countries
+}
+
 const App = () => {
   const [cities, setCities] = useState([])
   const [isLoading, setIsLoading] = useState(false)
@@ -31,8 +42,6 @@ const App = () => {
     getCities()
   }, [])
 
-  console.log(cities)
-
   return (
     <div>
       <BrowserRouter>
@@ -49,7 +58,10 @@ const App = () => {
               path='cities'
               element={<CityList cities={cities} isLoading={isLoading} />}
             />
-            <Route path='countries' element={<CountryList />} />
+            <Route
+              path='countries'
+              element={<CountryList countries={uniqCountries(cities)} />}
+            />
           </Route>
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
