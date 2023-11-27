@@ -1,12 +1,12 @@
 import React from 'react'
+import Country from '../country/country.jsx'
+import styles from './country-list.module.css'
 
 const CountryList = ({ countries }) => {
-  console.log(countries)
-
   return (
-    <ul>
+    <ul className={styles.countries}>
       {countries.map((country) => (
-        <div key={country.country}>1</div>
+        <Country country={country} key={country.emoji} />
       ))}
     </ul>
   )

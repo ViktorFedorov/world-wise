@@ -7,6 +7,7 @@ import NotFoundPage from '../../pages/not-found/not-found-page.jsx'
 import AppLayout from '../../pages/app-layout/app-layout.jsx'
 import CityList from '../city-list/city-list.jsx'
 import CountryList from '../country-list/country-list.jsx'
+import CityDetails from '../city-details/city-details.jsx'
 
 const BASE_URL = 'http://localhost:3000'
 
@@ -18,7 +19,6 @@ const uniqCountries = (cities) => {
       continue
     countries.push(cities[i])
   }
-
   return countries
 }
 
@@ -63,6 +63,7 @@ const App = () => {
               path='countries'
               element={<CountryList countries={uniqCountries(cities)} />}
             />
+            <Route path='cities/:id' element={<CityDetails />} />
           </Route>
           <Route path='*' element={<NotFoundPage />} />
         </Routes>

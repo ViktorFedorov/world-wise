@@ -1,6 +1,9 @@
 .nav {
-  color: #E8EEF1;
   margin: 30px 0;
+}
+
+.nav a {
+  color: #E8EEF1;
 }
 
 .links {

@@ -1,13 +1,23 @@
 .city {
   padding: 10px 20px;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
-  color: white;
   background-color: #383F42;
   border-radius: 5px;
   margin-bottom: 10px;
   font-size: 14px;
+  border-left: 3px solid #46f739;
+  cursor: pointer;
+}
+
+.city a {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.city:hover {
+  transform: scale(1.03);
+  background-color: #605454;
 }
 
 .left {

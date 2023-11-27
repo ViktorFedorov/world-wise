@@ -4,7 +4,7 @@
       "cityName": "Lisbon",
       "country": "Portugal",
       "emoji": "https://emojio.ru/images/apple-b/1f1f5-1f1f9.png",
-      "date": "2027-10-31T15:59:59.138Z",
+      "date": "2027-10-31",
       "notes": "My favorite city so far!",
       "position": {
         "lat": 38.727881642324164,
@@ -16,7 +16,7 @@
       "cityName": "Madrid",
       "country": "Spain",
       "emoji": "https://emojio.ru/images/apple-b/1f1ea-1f1f8.png",
-      "date": "2027-07-15T08:22:53.976Z",
+      "date": "2027-07-15",
       "notes": "",
       "position": {
         "lat": 40.46635901755316,
@@ -28,7 +28,7 @@
       "cityName": "Berlin",
       "country": "Germany",
       "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
-      "date": "2027-02-12T09:24:11.863Z",
+      "date": "2027-02-12",
       "notes": "Amazing 😃",
       "position": {
         "lat": 52.53586782505711,
@@ -40,7 +40,7 @@
       "cityName": "Barcelona",
       "country": "Spain",
       "emoji": "https://emojio.ru/images/apple-b/1f1ea-1f1f8.png",
-      "date": "2027-07-15T08:22:53.976Z",
+      "date": "2027-07-15",
       "notes": "",
       "position": {
         "lat": 40.46635901755316,
@@ -52,7 +52,7 @@
       "cityName": "Bavaria",
       "country": "Germany",
       "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
-      "date": "2027-02-12T09:24:11.863Z",
+      "date": "2027-02-12",
       "notes": "Amazing 😃",
       "position": {
         "lat": 52.53586782505711,
