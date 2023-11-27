@@ -14,8 +14,9 @@ const uniqCountries = (cities) => {
   const countries = []
 
   for (let i = 0; i < cities.length; i++) {
-    if (countries.some((country) => country === cities[i].country)) continue
-    countries.push(cities[i].country)
+    if (countries.some((country) => country.country === cities[i].country))
+      continue
+    countries.push(cities[i])
   }
 
   return countries
