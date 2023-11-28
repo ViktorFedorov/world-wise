@@ -3,11 +3,11 @@ import styles from './city.module.css'
 import { Link } from 'react-router-dom'
 
 const City = ({ city }) => {
-  const { cityName, emoji, date, id } = city
+  const { cityName, emoji, date, id, position } = city
 
   return (
     <li className={styles.city}>
-      <Link to={`${id}`}>
+      <Link to={`${id}?lat=${position.lat}&lng=${position.lng}`}>
         <div className={styles.left}>
           <img src={emoji} alt='' className={styles.flag} />
           <p className={styles.name}>{cityName}</p>
