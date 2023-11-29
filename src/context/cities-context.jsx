@@ -16,7 +16,7 @@ const uniqCountries = (cities) => {
 
 const CitiesProvider = ({ children }) => {
   const [cities, setCities] = useState([])
-
+  const [currentCity, setCurrentCity] = useState({})
   const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
@@ -36,12 +36,27 @@ const CitiesProvider = ({ children }) => {
     getCities()
   }, [])
 
+  const getCity = async (id) => {
+    setIsLoading(true)
+    try {
+      const res = await fetch(`${BASE_URL}/cities/${id}`)
+      const city = await res.json()
+      setCurrentCity(city)
+    } catch {
+      alert('City not loaded =(')
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
   return (
     <CitiesContext.Provider
       value={{
         cities,
         countries: uniqCountries(cities),
-        isLoading
+        isLoading,
+        currentCity,
+        getCity
       }}
     >
       {children}

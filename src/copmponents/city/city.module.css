@@ -55,3 +55,7 @@
   font-weight: 800;
 }
 
+.active {
+  box-shadow: -2px 1px 21px 0px rgba(71, 232, 99, 0.51);
+}
+
