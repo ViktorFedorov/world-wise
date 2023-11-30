@@ -43,20 +43,20 @@
       "date": "2027-07-15",
       "notes": "",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": 41.4038944095327,
+        "lng": 2.173129045074991
       },
       "id": 178067541
     },
     {
-      "cityName": "Bavaria",
+      "cityName": "Munich",
       "country": "Germany",
       "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
       "date": "2027-02-12",
       "notes": "Amazing 😃",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
+        "lat": 48.145026180593604,
+        "lng": 11.57059977880797
       },
       "id": 9844319733
     }

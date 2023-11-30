@@ -1,3 +1,4 @@
+@import "https://unpkg.com/leaflet@1.9.3/dist/leaflet.css";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
 
 * {
@@ -7,9 +8,7 @@
 }
 
 body {
-  padding: 15px;
   font-family: 'Manrope', sans-serif;
-  background-color: #bdbdbd;
 }
 
 a {
