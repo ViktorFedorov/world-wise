@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 import styles from './map.module.css'
-import { useSearchParams } from 'react-router-dom'
 import { useCities } from '../../context/cities-context.jsx'
 
 const Map = () => {
