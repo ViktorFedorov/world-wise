@@ -7,23 +7,11 @@ import { useCities } from '../../context/cities-context.jsx'
 const Map = () => {
   const { cities } = useCities()
 
-  const [searchParams, setSearchParams] = useSearchParams()
   const [mapPosition, setMapPosition] = useState([
     52.53586782505711, 13.376933665713324
   ])
 
-  // const lat = searchParams.get('lat')
-  // const lng = searchParams.get('lng')
-  //
-  // useEffect(() => {
-  //   if (!lat && !lng) return
-  //   setMapPosition([+lat, +lng])
-  // }, [lat, lng])
-  //
-  // console.log(mapPosition)
-
   return (
-    // <div className={styles.mapContainer}>
     <MapContainer
       center={mapPosition}
       zoom={13}
@@ -35,10 +23,11 @@ const Map = () => {
         url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
       />
       {cities.map((city) => (
-        <Marker
-          position={[city.position.lat, city.position.lng]}
-          key={city.id}
-        />
+        <Marker position={[city.position.lat, city.position.lng]} key={city.id}>
+          <Popup>
+            {city.cityName} <br /> {city.notes}
+          </Popup>
+        </Marker>
       ))}
       {/*<Marker position={mapPosition}>*/}
       {/*  <Popup>*/}
@@ -46,7 +35,6 @@ const Map = () => {
       {/*  </Popup>*/}
       {/*</Marker>*/}
     </MapContainer>
-    // </div>
   )
 }
 
