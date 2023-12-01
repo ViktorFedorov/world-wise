@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
+import {
+  MapContainer,
+  Marker,
+  Popup,
+  TileLayer,
+  useMap,
+  useMapEvents
+} from 'react-leaflet'
 import styles from './map.module.css'
 import { useCities } from '../../context/cities-context.jsx'
-import { useSearchParams } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 
 const Map = () => {
   const { cities } = useCities()
   const [searchParams, setSearchParams] = useSearchParams()
   const [mapPosition, setMapPosition] = useState([59.5358, 30.376])
+
   const lat = searchParams.get('lat')
   const lng = searchParams.get('lng')
 
@@ -35,15 +43,25 @@ const Map = () => {
         </Marker>
       ))}
       <JumpToCoords position={mapPosition} />
+      <DetectClick />
     </MapContainer>
   )
 }
 
-// docs to leaflet
+// docs to leaflet https://react-leaflet.js.org/docs/api-map/#usemapevents
 const JumpToCoords = ({ position }) => {
   const map = useMap()
   map.setView(position)
   return null
+}
+
+const DetectClick = () => {
+  const navigate = useNavigate()
+  useMapEvents({
+    click: () => {
+      navigate('form')
+    }
+  })
 }
 
 export default Map
