@@ -59,6 +59,78 @@
         "lng": 11.57059977880797
       },
       "id": 9844319733
+    },
+    {
+      "cityName": "Saint Petersburg",
+      "country": "Russian Federation (the)",
+      "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
+      "date": "2023-12-02T22:30",
+      "notes": "yeeeee",
+      "position": {
+        "lat": 59.99761275899162,
+        "lng": 30.228347254458424
+      },
+      "id": 1701541691322
+    },
+    {
+      "cityName": "Moscow",
+      "country": "Russian Federation (the)",
+      "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
+      "date": "2023-01-04T02:41",
+      "notes": "",
+      "position": {
+        "lat": 55.73948169869349,
+        "lng": 37.65914329444458
+      },
+      "id": 1701542184276
+    },
+    {
+      "cityName": "Slantsy",
+      "country": "Russian Federation (the)",
+      "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
+      "date": "2023-12-02T21:38",
+      "notes": "ssss",
+      "position": {
+        "lat": 59.0758596597018,
+        "lng": 28.063544834382764
+      },
+      "id": 1701542299151
+    },
+    {
+      "cityName": "Slantsy",
+      "country": "Russian Federation (the)",
+      "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
+      "date": "2023-12-02T21:38",
+      "notes": "",
+      "position": {
+        "lat": 59.081416896571206,
+        "lng": 28.03586500998993
+      },
+      "id": 1701542329709
+    },
+    {
+      "cityName": "Tallinn",
+      "country": "Estonia",
+      "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
+      "date": "2023-12-13T03:39",
+      "notes": "adasd",
+      "position": {
+        "lat": 59.37518983291977,
+        "lng": 24.733812024563356
+      },
+      "id": 1701542359577
+    },
+    {
+      "cityName": "Yam-Tesovo",
+      "country": "Russian Federation (the)",
+      "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
+      "date": "2023-12-02T21:42",
+      "notes": "",
+      "position": {
+        "lat": 58.955674359706016,
+        "lng": 30.59085684517074
+      },
+      "id": 1701542548623
     }
   ]
 }
