@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import styles from './form.module.css'
-import { json, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import DatePicker from 'react-datepicker'
 import useCoords from '../../hooks/useCoords.js'
 import Message from '../message/message.jsx'
 import Spinner from '../spinner/spinner.jsx'
+import styles from './form.module.css'
+import 'react-datepicker/dist/react-datepicker.css'
+import { useCities } from '../../context/cities-context.jsx'
 
 const BASE_URL = 'https://api.bigdatacloud.net/data/reverse-geocode-client'
 
@@ -11,11 +14,12 @@ const Form = () => {
   const [lat, lng] = useCoords()
   const [cityName, setCityName] = useState('')
   const [countryName, setCountryName] = useState('')
-  const [date, setDate] = useState('')
+  const [date, setDate] = useState(Date.now())
   const [notes, setNotes] = useState('')
   const navigate = useNavigate()
   const [isLoadingGeocoding, setIsLoadingGeocoding] = useState(false)
   const [errorGeocoding, setErrorGeocoding] = useState('')
+  const { addCity } = useCities()
 
   useEffect(() => {
     const getCityData = async () => {
@@ -42,8 +46,10 @@ const Form = () => {
     getCityData()
   }, [lat, lng])
 
-  const submitHandler = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+
+    if (!cityName || !date) return
 
     const newCity = {
       cityName,
@@ -54,30 +60,18 @@ const Form = () => {
       position: {
         lat,
         lng
-      },
-      id: Date.now()
+      }
     }
 
     addCity(newCity)
-  }
-
-  const addCity = async (city) => {
-    const res = await fetch('http://localhost:3000/cities', {
-      method: 'POST',
-      body: JSON.stringify(city),
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8'
-      }
-    })
-
-    if (res.ok) navigate('/app/cities')
+    navigate('/app/cities')
   }
 
   if (isLoadingGeocoding) return <Spinner />
   if (errorGeocoding) return <Message message={errorGeocoding.message} />
 
   return (
-    <form className={styles.form} onSubmit={submitHandler}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.element}>
         <label htmlFor='city'>City name</label>
         <input
@@ -89,11 +83,12 @@ const Form = () => {
       </div>
       <div className={styles.element}>
         <label htmlFor='date'>When did you go to?</label>
-        <input
-          value={date}
-          type='datetime-local'
+        <DatePicker
           id='date'
-          onChange={(e) => setDate(e.target.value)}
+          showIcon
+          selected={date}
+          onChange={(date) => setDate(date)}
+          dateFormat='dd.mm.yyyy'
         />
       </div>
       <div className={styles.element}>

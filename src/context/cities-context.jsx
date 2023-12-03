@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const BASE_URL = 'http://localhost:3000'
 const CitiesContext = createContext(null)
@@ -49,6 +50,29 @@ const CitiesProvider = ({ children }) => {
     }
   }
 
+  const addCity = async (city) => {
+    try {
+      setIsLoading(true)
+      const res = await fetch('http://localhost:3000/cities', {
+        method: 'POST',
+        body: JSON.stringify(city),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8'
+        }
+      })
+      if (res.ok) {
+        const createdCity = await res.json()
+        setCities([...cities, createdCity])
+      } else {
+        throw new Error('City not added =(')
+      }
+    } catch (err) {
+      alert(err)
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
   return (
     <CitiesContext.Provider
       value={{
@@ -56,7 +80,8 @@ const CitiesProvider = ({ children }) => {
         countries: uniqCountries(cities),
         isLoading,
         currentCity,
-        getCity
+        getCity,
+        addCity
       }}
     >
       {children}

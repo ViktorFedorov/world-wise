@@ -64,73 +64,73 @@
       "cityName": "Saint Petersburg",
       "country": "Russian Federation (the)",
       "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
-      "date": "2023-12-02T22:30",
-      "notes": "yeeeee",
+      "date": 1701591763980,
+      "notes": "home",
       "position": {
-        "lat": 59.99761275899162,
-        "lng": 30.228347254458424
+        "lat": 60.00550880971185,
+        "lng": 30.209967016582958
       },
-      "id": 1701541691322
+      "id": 9844319734
     },
     {
       "cityName": "Moscow",
       "country": "Russian Federation (the)",
       "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
-      "date": "2023-01-04T02:41",
+      "date": 1701591968563,
       "notes": "",
       "position": {
-        "lat": 55.73948169869349,
-        "lng": 37.65914329444458
+        "lat": 55.749337521358754,
+        "lng": 37.627741238837295
       },
-      "id": 1701542184276
+      "id": 9844319735
     },
     {
-      "cityName": "Slantsy",
+      "cityName": "Vyborg",
       "country": "Russian Federation (the)",
       "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
-      "date": "2023-12-02T21:38",
-      "notes": "ssss",
+      "date": 1701592221478,
+      "notes": "so faaaar",
       "position": {
-        "lat": 59.0758596597018,
-        "lng": 28.063544834382764
+        "lat": 60.69872817239596,
+        "lng": 28.74479874826503
       },
-      "id": 1701542299151
+      "id": 9844319736
     },
     {
-      "cityName": "Slantsy",
+      "cityName": "Kurgan",
       "country": "Russian Federation (the)",
       "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
-      "date": "2023-12-02T21:38",
+      "date": 1701592286030,
+      "notes": "motherland",
+      "position": {
+        "lat": 55.42277902267131,
+        "lng": 65.36048903703417
+      },
+      "id": 9844319737
+    },
+    {
+      "cityName": "Khodosivka",
+      "country": "Ukraine",
+      "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
+      "date": 1701592576290,
+      "notes": "cfkjtls",
+      "position": {
+        "lat": 50.317408112618715,
+        "lng": 30.512371404999055
+      },
+      "id": 9844319738
+    },
+    {
+      "cityName": "Kharkiv",
+      "country": "Ukraine",
+      "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
+      "date": 1701592605417,
       "notes": "",
       "position": {
-        "lat": 59.081416896571206,
-        "lng": 28.03586500998993
+        "lat": 50.035973672195496,
+        "lng": 36.274928777580556
       },
-      "id": 1701542329709
-    },
-    {
-      "cityName": "Tallinn",
-      "country": "Estonia",
-      "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
-      "date": "2023-12-13T03:39",
-      "notes": "adasd",
-      "position": {
-        "lat": 59.37518983291977,
-        "lng": 24.733812024563356
-      },
-      "id": 1701542359577
-    },
-    {
-      "cityName": "Yam-Tesovo",
-      "country": "Russian Federation (the)",
-      "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
-      "date": "2023-12-02T21:42",
-      "notes": "",
-      "position": {
-        "lat": 58.955674359706016,
-        "lng": 30.59085684517074
-      },
-      "id": 1701542548623
+      "id": 9844319739
     }
   ]
 }
