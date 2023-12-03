@@ -7,10 +7,6 @@ const City = ({ city }) => {
   const { cityName, emoji, date, id, position } = city
   const { currentCity, removeCity } = useCities()
 
-  const handleClick = () => {
-    removeCity(id)
-  }
-
   return (
     <li
       className={
@@ -24,7 +20,7 @@ const City = ({ city }) => {
         </div>
         <p>({date})</p>
       </Link>
-      <button className={styles.remove} onClick={handleClick}>
+      <button className={styles.remove} onClick={() => removeCity(id)}>
         x
       </button>
     </li>
