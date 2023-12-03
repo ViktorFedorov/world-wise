@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import tr from 'react-datepicker'
 
 const BASE_URL = 'http://localhost:3000'
 const CitiesContext = createContext(null)
@@ -53,7 +54,7 @@ const CitiesProvider = ({ children }) => {
   const addCity = async (city) => {
     try {
       setIsLoading(true)
-      const res = await fetch('http://localhost:3000/cities', {
+      const res = await fetch(`${BASE_URL}/cities`, {
         method: 'POST',
         body: JSON.stringify(city),
         headers: {
@@ -73,6 +74,28 @@ const CitiesProvider = ({ children }) => {
     }
   }
 
+  const removeCity = async (id) => {
+    try {
+      setIsLoading(true)
+      const res = await fetch(`${BASE_URL}/cities/${id}`, {
+        method: 'DELETE',
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8'
+        }
+      })
+      if (res.ok) {
+        const updatedCities = cities.filter((city) => city.id !== id)
+        setCities(updatedCities)
+      } else {
+        throw new Error('City not deleted =(')
+      }
+    } catch (err) {
+      alert(err)
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
   return (
     <CitiesContext.Provider
       value={{
@@ -81,7 +104,8 @@ const CitiesProvider = ({ children }) => {
         isLoading,
         currentCity,
         getCity,
-        addCity
+        addCity,
+        removeCity
       }}
     >
       {children}

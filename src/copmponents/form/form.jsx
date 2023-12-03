@@ -14,7 +14,7 @@ const Form = () => {
   const [lat, lng] = useCoords()
   const [cityName, setCityName] = useState('')
   const [countryName, setCountryName] = useState('')
-  const [date, setDate] = useState(Date.now())
+  const [date, setDate] = useState('')
   const [notes, setNotes] = useState('')
   const navigate = useNavigate()
   const [isLoadingGeocoding, setIsLoadingGeocoding] = useState(false)
@@ -46,16 +46,18 @@ const Form = () => {
     getCityData()
   }, [lat, lng])
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
 
     if (!cityName || !date) return
+
+    const formattedDate = date.toLocaleString().split(',')[0]
 
     const newCity = {
       cityName,
       country: countryName,
       emoji: 'https://emojio.ru/images/apple-b/1f1e9-1f1ea.png',
-      date,
+      date: formattedDate,
       notes,
       position: {
         lat,

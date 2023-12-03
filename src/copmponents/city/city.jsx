@@ -1,11 +1,15 @@
 import React from 'react'
-import styles from './city.module.css'
 import { Link } from 'react-router-dom'
 import { useCities } from '../../context/cities-context.jsx'
+import styles from './city.module.css'
 
 const City = ({ city }) => {
   const { cityName, emoji, date, id, position } = city
-  const { currentCity } = useCities()
+  const { currentCity, removeCity } = useCities()
+
+  const handleClick = () => {
+    removeCity(id)
+  }
 
   return (
     <li
@@ -18,11 +22,11 @@ const City = ({ city }) => {
           <img src={emoji} alt='' className={styles.flag} />
           <p className={styles.name}>{cityName}</p>
         </div>
-        <div className={styles.group}>
-          <p>({date})</p>
-          <button className={styles.remove}>x</button>
-        </div>
+        <p>({date})</p>
       </Link>
+      <button className={styles.remove} onClick={handleClick}>
+        x
+      </button>
     </li>
   )
 }
