@@ -51,11 +51,6 @@ const reducer = (state, action) => {
         ...state,
         isLoading: true
       }
-    // case 'END_LOADING':
-    //   return {
-    //     ...state,
-    //     isLoading: false
-    //   }
     default:
       return state
   }
