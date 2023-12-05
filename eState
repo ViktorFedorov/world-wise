@@ -1,0 +1,143 @@
+[33mcommit be06396fadffe34d9999e08b38984c850fbbffdd[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Viktor <viktorF@gmail.net>
+Date:   Mon Dec 4 18:08:28 2023 +0300
+
+    savegame
+
+[33mcommit 575b556ffecfb267c85721784a5e23d8fbea0b8e[m
+Author: ViktorF <index@user.mail>
+Date:   Mon Dec 4 08:01:59 2023 +0300
+
+    start refactoring city-context component for useReduser
+
+[33mcommit 8da717d2085a71db988e6e423159c2e52a6cfeb8[m
+Author: ViktorF <index@user.mail>
+Date:   Sun Dec 3 19:10:20 2023 +0300
+
+    delete city refactoring
+
+[33mcommit 7245db467dc2f5a46b896fa887f6fea7100677da[m
+Author: ViktorF <index@user.mail>
+Date:   Sun Dec 3 19:00:32 2023 +0300
+
+    delete city
+
+[33mcommit 882f5639262428a51702d55267fa04af02b891d8[m
+Author: ViktorF <index@user.mail>
+Date:   Sun Dec 3 12:12:26 2023 +0300
+
+    update city-list on add new city
+
+[33mcommit 7a6dcc76455f04745cf29d65af25bbd97f5c4b86[m
+Author: ViktorF <index@user.mail>
+Date:   Sat Dec 2 21:46:17 2023 +0300
+
+    add new city
+
+[33mcommit a299e7fa72c2f8f948a7213cbd0aa0acd0afe761[m
+Author: ViktorF <index@user.mail>
+Date:   Fri Dec 1 07:39:49 2023 +0300
+
+    event click on the map
+
+[33mcommit ea3ceff537ea62a05b990a2f5dce9e8a08bd91e2[m
+Author: ViktorF <index@user.mail>
+Date:   Thu Nov 30 22:13:59 2023 +0300
+
+    jump to place by select city
+
+[33mcommit b43716324c5e4c428fd8b5df13f2c73b075c3c2f[m
+Author: ViktorF <index@user.mail>
+Date:   Thu Nov 30 20:31:19 2023 +0300
+
+    fix
+
+[33mcommit 6739fa1feb9866090ba4a744097bea0da8f14b9f[m
+Author: Viktor <viktorF@gmail.net>
+Date:   Thu Nov 30 17:57:41 2023 +0300
+
+    city markers on map
+
+[33mcommit ecc4f15660996bdae9a23c5d16874738903c97ed[m
+Author: ViktorF <index@user.mail>
+Date:   Thu Nov 30 08:08:08 2023 +0300
+
+    leaflet start
+
+[33mcommit 2b64936a10c1ec4e590e3d06901ab7362b844e37[m
+Author: Viktor <viktorF@gmail.net>
+Date:   Wed Nov 29 17:06:25 2023 +0300
+
+    get city by id
+
+[33mcommit 7cba268e5ab47a9853226e6f585d6e0324abb103[m
+Author: ViktorF <index@user.mail>
+Date:   Wed Nov 29 07:34:37 2023 +0300
+
+    app refac
+
+[33mcommit cd03b5a3a3a002a514c009387f716b2c9bc85695[m
+Author: ViktorF <index@user.mail>
+Date:   Wed Nov 29 07:21:25 2023 +0300
+
+    cities-context
+
+[33mcommit 0dcd4f9b1ab14adf560b27c88261df5ac7d8be10[m
+Author: Viktor <viktorF@gmail.net>
+Date:   Tue Nov 28 15:09:36 2023 +0300
+
+    useNavigate
+
+[33mcommit 53b6ac00046fe2799d396081ff34d4dba1162cbe[m
+Author: ViktorF <index@user.mail>
+Date:   Tue Nov 28 07:41:42 2023 +0300
+
+    hover by citi elem
+
+[33mcommit 43dd13f659cb146177153d969b24a2c69bf9133d[m
+Author: Viktor <viktorF@gmail.net>
+Date:   Mon Nov 27 17:26:53 2023 +0300
+
+    dynamic routes
+
+[33mcommit 6efa20c3e5dd241a639be342cd4ba89939de77c0[m
+Author: ViktorF <index@user.mail>
+Date:   Mon Nov 27 07:35:14 2023 +0300
+
+    uniqCountries fix
+
+[33mcommit 1120cc67942ec4bc0f05d2b87fdb100b8906869e[m
+Author: Viktor <viktorF@gmail.net>
+Date:   Fri Nov 24 16:14:09 2023 +0300
+
+    uniqCountries
+
+[33mcommit 3287374de3fbfed69aeb4cb4bff427ddcb45f73f[m
+Author: ViktorF <index@user.mail>
+Date:   Thu Nov 23 22:11:16 2023 +0300
+
+    json server
+
+[33mcommit 1ac71c91e9721212f19108f6f7dc0f4c3e1bf088[m
+Author: Viktor <viktorF@gmail.net>
+Date:   Thu Nov 23 17:34:47 2023 +0300
+
+    nested routes
+
+[33mcommit c4dae10506ba33abf5e9f8ac58a2d6292e67df9a[m
+Author: Viktor <viktorF@gmail.net>
+Date:   Wed Nov 22 17:14:40 2023 +0300
+
+    sidebar start
+
+[33mcommit fbf51dcfaae637e8deeb41c60ffdc8d51d33f98b[m
+Author: Viktor <viktorF@gmail.net>
+Date:   Fri Nov 17 14:36:52 2023 +0300
+
+    app layout
+
+[33mcommit dabc0b295afe69078b51c949876307721d25583a[m
+Author: ViktorF <index@user.mail>
+Date:   Thu Nov 16 12:18:22 2023 +0300
+
+    init
