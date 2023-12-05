@@ -1,13 +1,13 @@
 import React from 'react'
 import Navigation from '../../copmponents/navigation/navigation.jsx'
 
-const PricingPage = () => {
+const LoginPage = () => {
   return (
     <div>
       <Navigation />
-      <h2>Pricing</h2>
+      <h2>Login</h2>
     </div>
   )
 }
 
-export default PricingPage
+export default LoginPage

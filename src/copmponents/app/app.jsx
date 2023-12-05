@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import ProductPage from '../../pages/product/product-page.jsx'
 import HomePage from '../../pages/home/home-page.jsx'
-import PricingPage from '../../pages/prices/pricing-page.jsx'
+import LoginPage from '../../pages/login/login-page.jsx'
 import NotFoundPage from '../../pages/not-found/not-found-page.jsx'
 import AppLayout from '../../pages/app-layout/app-layout.jsx'
 import CityList from '../city-list/city-list.jsx'
@@ -18,7 +18,7 @@ const App = () => {
         <Routes>
           <Route index element={<HomePage />} />
           <Route path='product' element={<ProductPage />} />
-          <Route path='pricing' element={<PricingPage />} />
+          <Route path='login' element={<LoginPage />} />
           <Route path='app' element={<AppLayout />}>
             <Route index element={<Navigate to='cities' />} />
             <Route path='cities' element={<CityList />} />
