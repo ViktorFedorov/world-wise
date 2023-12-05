@@ -1,3 +1,28 @@
 {
-  "cities": []
+  "cities": [
+    {
+      "cityName": "Saint Petersburg",
+      "country": "Russian Federation (the)",
+      "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
+      "date": "27.11.2023",
+      "notes": "",
+      "position": {
+        "lat": 60.00543151299175,
+        "lng": 30.21000547684901
+      },
+      "id": 1
+    },
+    {
+      "cityName": "Velikiy Novgorod",
+      "country": "Russian Federation (the)",
+      "emoji": "https://emojio.ru/images/apple-b/1f1e9-1f1ea.png",
+      "date": "03.01.2024",
+      "notes": "",
+      "position": {
+        "lat": 58.54252010629135,
+        "lng": 31.275380249033557
+      },
+      "id": 3
+    }
+  ]
 }

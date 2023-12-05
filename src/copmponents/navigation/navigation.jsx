@@ -1,19 +1,21 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styles from './navigation.module.css'
+import Logo from '../logo/logo.jsx'
 
 const Navigation = () => {
   return (
     <nav className={styles.nav}>
       <ul className={styles.menu}>
         <li>
-          <NavLink to='/'>home</NavLink>
+          <NavLink to='/'>
+            <Logo />
+          </NavLink>
         </li>
         <li>
-          <NavLink to='/product'>product</NavLink>
-        </li>
-        <li>
-          <NavLink to='/login'>login</NavLink>
+          <NavLink className={styles.login} to='/login'>
+            login
+          </NavLink>
         </li>
       </ul>
     </nav>

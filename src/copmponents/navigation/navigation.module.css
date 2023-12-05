@@ -1,14 +1,24 @@
 .nav {
-  background-color: orange;
-  padding: 30px 0;
+  background-color: #484A4D;
+  padding: 20px 40px;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
-  padding-left: 0;
+  align-items: center;
 }
 
 .menu li {
   list-style: none;
+}
+
+.menu a {
+  color: #E8EEF1;
+}
+
+.login {
+  padding: 5px 10px;
+  background-color: #01BC5B;
+  border-radius: 5px;
 }

@@ -1,0 +1,46 @@
+.login {
+  background-color: #484A4D;
+  height: 100vh;
+}
+
+.form {
+  background-color: #373E40;
+  width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.element label {
+  color: #E8EEF1;
+  font-size: 11px;
+  margin-bottom: 3px;
+}
+
+.element input {
+  border-radius: 5px;
+  padding: 8px 10px;
+  width: 100%;
+  background-color: #CFD8DA;
+  border: none;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #212526;
+  color: #bec1c7;
+  font-family: 'Manrope', sans-serif;
+  border-radius: 5px;
+}
+
+.button:hover {
+  color: white;
+}

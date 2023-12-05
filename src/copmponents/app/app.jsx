@@ -10,25 +10,28 @@ import CountryList from '../country-list/country-list.jsx'
 import CityDetails from '../city-details/city-details.jsx'
 import Form from '../form/form.jsx'
 import { CitiesProvider } from '../../context/cities-context'
+import { AuthProvider } from '../../context/fake-auth-context'
 
 const App = () => {
   return (
     <CitiesProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<HomePage />} />
-          <Route path='product' element={<ProductPage />} />
-          <Route path='login' element={<LoginPage />} />
-          <Route path='app' element={<AppLayout />}>
-            <Route index element={<Navigate to='cities' />} />
-            <Route path='cities' element={<CityList />} />
-            <Route path='countries' element={<CountryList />} />
-            <Route path='cities/:id' element={<CityDetails />} />
-            <Route path='form' element={<Form />} />
-          </Route>
-          <Route path='*' element={<NotFoundPage />} />
-        </Routes>
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<HomePage />} />
+            <Route path='product' element={<ProductPage />} />
+            <Route path='login' element={<LoginPage />} />
+            <Route path='app' element={<AppLayout />}>
+              <Route index element={<Navigate to='cities' />} />
+              <Route path='cities' element={<CityList />} />
+              <Route path='countries' element={<CountryList />} />
+              <Route path='cities/:id' element={<CityDetails />} />
+              <Route path='form' element={<Form />} />
+            </Route>
+            <Route path='*' element={<NotFoundPage />} />
+          </Routes>
+        </BrowserRouter>
+      </AuthProvider>
     </CitiesProvider>
   )
 }

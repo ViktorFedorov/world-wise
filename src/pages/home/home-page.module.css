@@ -1,0 +1,29 @@
+.home {
+  background-color: #484A4D;
+  height: 100vh;
+  color: #E8EEF1;
+  text-align: center;
+}
+
+.heding {
+  margin: 40px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.subheader {
+  color: #919396;
+  margin: 40px auto 80px;
+  font-size: 14px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.gotoapp {
+  padding: 10px 20px;
+  background-color: #01BC5B;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
