@@ -1,7 +1,7 @@
 import React from 'react'
 import { useAuth } from '../../context/fake-auth-context.jsx'
-import styles from './user.module.css'
 import { useNavigate } from 'react-router-dom'
+import styles from './user.module.css'
 
 const User = () => {
   const { user, logout } = useAuth()
@@ -14,11 +14,7 @@ const User = () => {
 
   return (
     <div className={styles.user}>
-      <img
-        className={styles.avatar}
-        src='https://distribution.faceit-cdn.net/images/7c8701a5-fbb5-47aa-897a-1f071cd57733.jpeg'
-        alt=''
-      />
+      <img className={styles.avatar} src={user.avatar} alt='' />
       <p>Welcome, {user.name}</p>
       <button className={styles.button} onClick={handleLogout}>
         Logout
