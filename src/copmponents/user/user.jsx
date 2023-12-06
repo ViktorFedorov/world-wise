@@ -7,6 +7,11 @@ const User = () => {
   const { user, logout } = useAuth()
   const navigate = useNavigate()
 
+  const handleLogout = () => {
+    logout()
+    navigate('/')
+  }
+
   return (
     <div className={styles.user}>
       <img
@@ -15,7 +20,7 @@ const User = () => {
         alt=''
       />
       <p>Welcome, {user.name}</p>
-      <button className={styles.button} onClick={() => navigate('/')}>
+      <button className={styles.button} onClick={handleLogout}>
         Logout
       </button>
     </div>
