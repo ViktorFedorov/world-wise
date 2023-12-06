@@ -13,12 +13,13 @@
   list-style: none;
 }
 
-.menu a {
-  color: #E8EEF1;
-}
-
 .login {
   padding: 5px 10px;
   background-color: #01BC5B;
   border-radius: 5px;
+  color: #000;
+  font-family: 'Manrope', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
 }

@@ -17,7 +17,7 @@ const HomePage = () => {
         Never forget your wonderful experiences, and show your friends how you
         have wandered the world.
       </h2>
-      <Link className={styles.gotoapp} to='app'>
+      <Link className={styles.gotoapp} to='login'>
         start tracking now
       </Link>
     </div>

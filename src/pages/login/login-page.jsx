@@ -12,12 +12,12 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    login(email, password)
+    if (email && password) login(email, password)
   }
 
   useEffect(() => {
     if (isAuth) navigate('/app')
-  }, [isAuth])
+  }, [isAuth, navigate])
 
   return (
     <div className={styles.login}>
