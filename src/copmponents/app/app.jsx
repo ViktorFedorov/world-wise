@@ -11,6 +11,7 @@ import CityDetails from '../city-details/city-details.jsx'
 import Form from '../form/form.jsx'
 import { CitiesProvider } from '../../context/cities-context'
 import { AuthProvider } from '../../context/fake-auth-context'
+import ProtectedRoute from '../../pages/protected-route/protected-route.jsx'
 
 const App = () => {
   return (
@@ -21,7 +22,14 @@ const App = () => {
             <Route index element={<HomePage />} />
             <Route path='product' element={<ProductPage />} />
             <Route path='login' element={<LoginPage />} />
-            <Route path='app' element={<AppLayout />}>
+            <Route
+              path='app'
+              element={
+                <ProtectedRoute>
+                  <AppLayout />
+                </ProtectedRoute>
+              }
+            >
               <Route index element={<Navigate to='cities' />} />
               <Route path='cities' element={<CityList />} />
               <Route path='countries' element={<CountryList />} />
